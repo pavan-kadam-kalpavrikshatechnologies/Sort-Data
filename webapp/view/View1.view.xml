@@ -1,0 +1,71 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        	<f:SimpleForm id="SimpleFormToolbar"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false"
+			ariaLabelledBy="Title1" >
+			<f:toolbar>
+				<Toolbar id="TB1">
+					<Title id="Title1" text="Login Page"/>
+					<ToolbarSpacer />
+					<Button icon="sap-icon://settings"/>
+					<Button icon="sap-icon://drop-down-list" />
+				</Toolbar>
+			</f:toolbar>
+			<f:content>
+            <Label text="User Name" required="true" />
+            <Input type="Text" maxLength="15" id="login" ></Input>
+
+            <Label text="Password" required="true" />
+            <Input type="Text" id="pass" maxLength="10" ></Input>
+
+            <Button text="click Me" press="onPress" />
+            </f:content>
+		</f:SimpleForm>
+
+		<Table items="{ path:'oModel1>/' }">
+		<columns>
+		<Column >
+		<Text text="Expid" />
+		</Column>
+		<Column >
+		<Text text="Exp Name" />
+		</Column>
+		<Column >
+		<Text text="Amount" />
+		</Column>
+		<Column >
+		<Text text="Date" />
+		</Column>
+		</columns>
+		<items>
+		<ColumnListItem >
+		<cells>
+		<Text text="{oModel1>expid}"/>
+		<Text text="{oModel1>expname}"/>
+		<Text text="{oModel1>amount}"/>
+		<Text text="{oModel1>date}"/>
+		</cells>
+		</ColumnListItem>
+		</items>
+		</Table>
+        </content>
+    </Page>
+</mvc:View>

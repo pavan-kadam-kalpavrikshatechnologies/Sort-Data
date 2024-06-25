@@ -1,0 +1,28 @@
+{
+    "student1":[
+        {
+        "expid":1,
+        "expname":"Bus"
+        },
+        {
+        "expid":2,
+        "expname":"Hotel"
+        },
+        {
+        "expid":3,
+        "expname":"Hotel"
+        },
+        {
+        "expid":4,
+        "expname":"Hotel"
+        },
+        {
+        "expid":5,
+        "expname":"Hotel"
+        },
+        {
+        "expid":6,
+        "expname":"Hotel"
+        }
+]
+}
